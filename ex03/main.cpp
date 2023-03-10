@@ -6,7 +6,7 @@
 /*   By: psuanpro <Marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 23:25:08 by psuanpro          #+#    #+#             */
-/*   Updated: 2023/03/10 23:36:19 by psuanpro         ###   ########.fr       */
+/*   Updated: 2023/03/10 23:40:06 by psuanpro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int main()
 	IMateriaSource* src = new MateriaSource();
 	AMateria *nice = new Ice();
 	AMateria *ncure = new Cure();
-	src->learnMateria(new Ice());
-	src->learnMateria(new Cure());
+	src->learnMateria(nice);
+	src->learnMateria(ncure);
 	ICharacter* me = new Character("me");
 	AMateria* tmp;
 	tmp = src->createMateria("ice");
