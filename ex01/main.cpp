@@ -6,7 +6,7 @@
 /*   By: psuanpro <Marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 21:32:35 by psuanpro          #+#    #+#             */
-/*   Updated: 2023/03/09 22:10:25 by psuanpro         ###   ########.fr       */
+/*   Updated: 2023/03/10 22:55:54 by psuanpro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main(void)
 		Animal *i = new Dog();
 		Animal *j = new Dog();
 
-		*i = *j;
+		//*i = *j;
 		delete j;
 		delete i;
 	}
