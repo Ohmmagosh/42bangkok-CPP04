@@ -6,7 +6,7 @@
 #    By: psuanpro <Marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/26 22:53:46 by psuanpro          #+#    #+#              #
-#    Updated: 2023/03/10 00:16:28 by psuanpro         ###   ########.fr        #
+#    Updated: 2023/03/10 22:18:26 by psuanpro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,19 +22,32 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Interface&recap
+NAME = InterfaceRecap
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 
 SRCS = main.cpp \
+		AMateria.cpp \
+		Character.cpp \
+		Cure.cpp \
+		Ice.cpp \
+		MateriaSource.cpp
 
 
 OBJS = $(SRCS:.cpp=.o)
 
 OBJ_DIR = obj
 OBJ := $(addprefix $(OBJ_DIR)/, $(OBJS))
-HEADER = IMateriaSource.hpp
+HEADER = AMateria.hpp \
+		Character.hpp \
+		Cure.hpp \
+		ICharacter.hpp \
+		IMateriaSource.hpp \
+		Ice.hpp \
+		MateriaSource.hpp \
+
+
 
 BRED =\033[1;31m
 BGRN =\033[1;32m
