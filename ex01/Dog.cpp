@@ -6,7 +6,7 @@
 /*   By: psuanpro <Marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 22:01:05 by psuanpro          #+#    #+#             */
-/*   Updated: 2023/03/09 22:17:05 by psuanpro         ###   ########.fr       */
+/*   Updated: 2023/03/10 22:47:29 by psuanpro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ Dog::Dog( void ): Animal("Dog") {
 
 Dog::Dog( const Dog &cp){
 	*this = cp;
+	this->brain = new Brain(*cp.brain);
 	std::cout << "Dog copy constructor call" << std::endl;
 }
 

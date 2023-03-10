@@ -6,7 +6,7 @@
 /*   By: psuanpro <Marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 22:01:07 by psuanpro          #+#    #+#             */
-/*   Updated: 2023/03/09 22:16:10 by psuanpro         ###   ########.fr       */
+/*   Updated: 2023/03/10 22:49:21 by psuanpro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ Cat& Cat::operator=( const Cat &cp ){
 		this->brain = new Brain(*cp.brain);
 		this->type = cp.type;
 	}
-	delete this->brain;
 	return (*this);
 }
 
